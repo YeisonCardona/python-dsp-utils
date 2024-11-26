@@ -34,18 +34,19 @@ classifiers = [
 ]
 
 dependencies = [
-    "matplotlib".
+    "matplotlib",
     "numpy",
     "scipy",
     "seaborn",
+    "PyWavelets",
 ]
 
 [project.urls]
-"Repository" = "https://github.com/dunderlab/python-dsp"
+"Repository" = "https://github.com/yeisoncardona/python-dsp"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["dsp_utild"]
+include = ["dsp_utils"]
 [project.optional-dependencies]
 dev = [
 
