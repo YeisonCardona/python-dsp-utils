@@ -46,7 +46,7 @@ dependencies = [
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["dsp_utils"]
+include = ["dsp_utils", "dsp_utils.filters", "dsp_utils.signals"]
 [project.optional-dependencies]
 dev = [
 
