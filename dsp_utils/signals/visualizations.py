@@ -160,8 +160,8 @@ class Visualizer:
         # X = fftshift(X)
         # W = fftshift(fftfreq(len(X), 1 / sample_rate))
 
-        X = np.abs(rfft(signal))
-        W = rfftfreq(len(X), 1 / sample_rate)
+        X = np.abs(fft(signal))
+        W = fftfreq(len(X), 1 / sample_rate)
 
         if ffn == 'plot':
             ax2.plot(W, X)
